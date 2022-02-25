@@ -1,0 +1,27 @@
+### Sign up
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "Password1!"
+}
+
+### Sign in
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "Password1!"
+}
+
+### TEST
+POST http://localhost:3000/auth/test
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWF0IjoxNjQ1ODAwNjExLCJleHAiOjE2NDU4MDQyMTF9.YZjH3G5PhSYlCZ0t8ltUrVh2hP3MWL03PRc8zYWpnAM
+
+{
+  "username": "user1",
+  "password": "Password1!"
+}
